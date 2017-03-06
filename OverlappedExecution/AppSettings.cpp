@@ -10,6 +10,7 @@ namespace AppSettings
     BoolSetting EnableVSync;
     FloatSetting TimelineZoom;
     BoolSetting UseSplitBarriers;
+    BoolSetting UseQueries;
     BoolSetting StablePowerState;
     BoolSetting UseHiPriorityComputeQueue;
     BoolSetting ShowWorkloadUI;
@@ -32,6 +33,9 @@ namespace AppSettings
 
         UseSplitBarriers.Initialize("UseSplitBarriers", "General", "Use Split Barriers", "", false);
         Settings.AddSetting(&UseSplitBarriers);
+
+        UseQueries.Initialize("UseQueries", "General", "Use Queries", "", false);
+        Settings.AddSetting(&UseQueries);
 
         StablePowerState.Initialize("StablePowerState", "General", "Stable Power State", "", false);
         Settings.AddSetting(&StablePowerState);
@@ -74,8 +78,8 @@ namespace AppSettings
 
 namespace AppSettings
 {
-    void SetWindowOpened(bool opened)
-    {
-        Settings.SetWindowOpened(opened);
-    }
+void SetWindowOpened(bool opened)
+{
+	Settings.SetWindowOpened(opened);
+}
 }

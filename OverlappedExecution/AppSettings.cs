@@ -23,6 +23,9 @@ public class Settings
         bool UseSplitBarriers = false;
 
         [UseAsShaderConstant(false)]
+        bool UseQueries = false;
+
+        [UseAsShaderConstant(false)]
         bool StablePowerState = false;
 
         [UseAsShaderConstant(false)]

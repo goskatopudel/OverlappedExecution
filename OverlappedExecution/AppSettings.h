@@ -17,6 +17,7 @@ namespace AppSettings
     extern BoolSetting EnableVSync;
     extern FloatSetting TimelineZoom;
     extern BoolSetting UseSplitBarriers;
+    extern BoolSetting UseQueries;
     extern BoolSetting StablePowerState;
     extern BoolSetting UseHiPriorityComputeQueue;
     extern BoolSetting ShowWorkloadUI;
@@ -41,5 +42,5 @@ namespace AppSettings
 
 namespace AppSettings
 {
-    void SetWindowOpened(bool opened);
+void SetWindowOpened(bool opened);
 }
