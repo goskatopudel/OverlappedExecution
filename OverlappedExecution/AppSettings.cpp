@@ -34,7 +34,7 @@ namespace AppSettings
         UseSplitBarriers.Initialize("UseSplitBarriers", "General", "Use Split Barriers", "", false);
         Settings.AddSetting(&UseSplitBarriers);
 
-        UseQueries.Initialize("UseQueries", "General", "Use Queries", "", false);
+        UseQueries.Initialize("UseQueries", "General", "Use Timestamp Queries", "", false);
         Settings.AddSetting(&UseQueries);
 
         StablePowerState.Initialize("StablePowerState", "General", "Stable Power State", "", false);
@@ -78,8 +78,8 @@ namespace AppSettings
 
 namespace AppSettings
 {
-void SetWindowOpened(bool opened)
-{
-	Settings.SetWindowOpened(opened);
-}
+    void SetWindowOpened(bool opened)
+    {
+        Settings.SetWindowOpened(opened);
+    }
 }

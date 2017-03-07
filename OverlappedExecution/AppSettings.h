@@ -42,5 +42,5 @@ namespace AppSettings
 
 namespace AppSettings
 {
-void SetWindowOpened(bool opened);
+    void SetWindowOpened(bool opened);
 }
